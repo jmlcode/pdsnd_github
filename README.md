@@ -29,8 +29,10 @@ The script is built on the following components. Functions used in the _.py_ scr
     1. whether first *n* records of data needs to be displayed
     2. whether the script should run for another round
 
-### Files used
-Include the files used
+### Additional Files
+* Bikeshare data from Chicago, NYC, and Washington are used for running the _.py_ script.
+* The three _.csv_ files are not added to and tracked in GitHub due to the large file size.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+* **Additional Files** mentioned above were provided by _Motivate_, a bike share system provider in the U.S.
+* Knowledge for using GitHub to post this work in Python was obtained from Udacity's sample remote repository in GitHub (https://github.com/udacity/course-collaboration-travel-plans)
