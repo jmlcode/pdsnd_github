@@ -158,10 +158,9 @@ def station_stats(df):
     print('     End: {} ({} times)'.format(popular_end_st,popular_end_st_count))
 
     # display most frequent combination of start station and end station trip
-    popular_combin_st = (df['Start Station'] +','+ df['End Station']).mode()[0]
-    popular_combin_st_count = (df['Start Station'] +','+ df['End Station']).value_counts()[0]
-    print(' - Most frequent combination of Stations: ({} times)'.format(popular_combin_st_count))
-    for i, station in enumerate(popular_combin_st.split(',')):
+    df['Start End St'] = df['Start Station'] +','+ df['End Station']
+    print(' - Most frequent combination of Stations: ({} times)'.format(df['Start End St'].value_counts()[0]))
+    for i, station in enumerate(df['Start End St'].mode()[0].split(',')):
         if i == 0:
             print('   Start: {}'.format(station))
         else:
