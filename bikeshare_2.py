@@ -61,6 +61,10 @@ def get_filters():
     return city, month, day
 
 def get_filters_month():
+    """
+        If the user requests to filter data by month,
+        then run get_filters_month() and return the specific month by which the data needs to be filtered.
+    """
     while True:
         filter_by_month = input('\n   Filter the data by the month: ').lower()
         if filter_by_month in months:
@@ -71,6 +75,10 @@ def get_filters_month():
     return filter_by_month
 
 def get_filters_day():
+    """
+        If the user requests to filter data by day,
+        then run get_filters_day() and return the specific day by which the data needs to be filtered.
+    """
     while True:
         filter_by_day = input('\n   Filter the data by the day of the week: ').lower()
         if filter_by_day in dow:
