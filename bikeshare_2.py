@@ -231,7 +231,7 @@ def top_n(df):
                 except:
                     print('\n [Invalid Entry] Please try again.')
                 else:
-                    if n >= 1 and n <= 10:
+                    if n in range(1,11):
                         i = 1
                         for row in df.head(n).index:
                             print('\n{}th Record'.format(i))
